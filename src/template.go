@@ -45,3 +45,7 @@ func make2DInt(r, c int) [][]int {
 	}
 	return s
 }
+
+func inRange(x, low, high int) bool {
+	return x >= low && x < high
+}

@@ -8,7 +8,7 @@ question__title_slug=`cat problems.json \
     | jq ".stat_status_pairs[].stat | select ( .frontend_question_id == ${problemId} ) " \
     | jq -r ".question__title_slug"`
 
-echo $question__title_slug
+echo $problemId-$question__title_slug
 key="${problemId}-${question__title_slug}"
 
 idLength=${#problemId}

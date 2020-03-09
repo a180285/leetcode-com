@@ -2,7 +2,7 @@
 
 problemId=$1
 
-# wget 'https://leetcode.com/api/problems/all/'
+# wget https://leetcode.com/api/problems/all/
 
 question__title_slug=`cat problems.json \
     | jq ".stat_status_pairs[].stat | select ( .frontend_question_id == ${problemId} ) " \

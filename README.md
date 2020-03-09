@@ -1,3 +1,3 @@
 # leetcode-com
 
-My golang solutions for https://leetcode.com/
+My Golang/C++ solutions for https://leetcode.com/

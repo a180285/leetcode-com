@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/huangwei/work/leetcode-com/src/1000+/1374-generate-a-string-with-characters-that-have-odd-counts/1374-generate-a-string-with-characters-that-have-odd-counts_test.cpp
+iostream
+-
+gtest/gtest.h
+/Users/huangwei/work/leetcode-com/src/1000+/1374-generate-a-string-with-characters-that-have-odd-counts/gtest/gtest.h
+

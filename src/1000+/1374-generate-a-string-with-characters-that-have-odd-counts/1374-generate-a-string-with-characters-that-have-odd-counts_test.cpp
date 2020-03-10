@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "gtest/gtest.h"
+
 using namespace std;
 
 class Solution {
@@ -17,8 +19,7 @@ public:
     }
 };
 
-int main() {
+TEST(SquareRootTest, PositiveNos) {
     Solution s;
-    cout << s.generateTheString(10) << endl;
-    return 0;
+    EXPECT_EQ(s.generateTheString(10), "abbbbbbbbb");
 }

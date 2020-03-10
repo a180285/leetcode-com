@@ -19,7 +19,7 @@ public:
     }
 };
 
-TEST(SquareRootTest, PositiveNos) {
+TEST(LeetCode, p1374) {
     Solution s;
     EXPECT_EQ(s.generateTheString(10), "abbbbbbbbb");
 }

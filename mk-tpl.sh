@@ -18,7 +18,7 @@ dirBase="src/${subDir}"
 
 mkdir -p "${dirBase}/${key}"
 
-if [ $2 == "cpp" ]; then
+if [ "$2" == "cpp" ]; then
   newFile="${dirBase}/${key}/${key}_test.cpp"
   cp src/template.cpp "$newFile"
   sed -i '' "s/p_/p${problemId}/g" $newFile

@@ -10,13 +10,8 @@ namespace p283 {
     class Solution {
     public:
         void moveZeroes(vector<int>& nums) {
-            int next = 0;
-            for (auto v : nums) {
-                if (v != 0) {
-                    nums[next++] = v;
-                }
-            }
-            fill(nums.begin() + next, nums.end(), 0);
+            auto newEnd = remove_if(nums.begin(), nums.end(), [](int v){return v == 0;});
+            fill(newEnd, nums.end(), 0);
         }
     };
 

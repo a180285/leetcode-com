@@ -2,3 +2,7 @@
 problems.json
 cmake-build-debug
 build
+
+.vs
+bin
+obj

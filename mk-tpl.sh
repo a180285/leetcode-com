@@ -18,9 +18,10 @@ dirBase="src/${subDir}"
 
 mkdir -p "${dirBase}/${key}"
 
-if [ "$2" == "cpp" ]; then
-  newFile="${dirBase}/${key}/${key}_test.cpp"
-  cp src/template.cpp "$newFile"
+if [ "$2" == "cpp" ] || [ "$2" == "cs" ]; then
+  ext="$2"
+  newFile="${dirBase}/${key}/${key}_test.$ext"
+  cp src/template.$ext "$newFile"
   sed -i '' "s/p_/p${problemId}/g" $newFile
 else # Golang
   cp src/template.go "${dirBase}/${key}/${key}_test.go"

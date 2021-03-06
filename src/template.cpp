@@ -1,4 +1,5 @@
-#include <iostream>
+#ifdef HuangWei_TEST
+#include <bits/stdc++.h>
 
 #include "gtest/gtest.h"
 
@@ -6,18 +7,23 @@ using namespace std;
 
 namespace p_ {
 
+#endif
+
+
 
     class Solution {
     public:
-        int numTimesAllBlue(const vector<int> &light) {
+        int countLargestGroup(int n) {
             return 0;
         }
     };
 
-
+#ifdef HuangWei_TEST
     
     TEST(LeetCode, p_) {
         Solution s;
-        EXPECT_EQ(s.numTimesAllBlue({2, 1, 3, 5, 4}), 0);
+        EXPECT_EQ(s.countLargestGroup(0), 0);
     }
 }
+
+#endif

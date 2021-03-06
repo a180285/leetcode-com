@@ -23,6 +23,11 @@ if [ "$2" == "cpp" ] || [ "$2" == "cs" ]; then
   newFile="${dirBase}/${key}/${key}_test.$ext"
   cp src/template.$ext "$newFile"
   sed -i '' "s/p_/p${problemId}/g" $newFile
-else # Golang
+elif [ "$2" == "go" ]; then
   cp src/template.go "${dirBase}/${key}/${key}_test.go"
+else
+  ext="cpp"
+  newFile="${dirBase}/${key}/${key}_test.$ext"
+  cp src/template.$ext "$newFile"
+  sed -i'' "s/p_/p${problemId}/g" $newFile
 fi

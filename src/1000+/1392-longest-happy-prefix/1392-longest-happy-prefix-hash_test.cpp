@@ -1,8 +1,9 @@
 #include <iostream>
-
+#include <bits/stdc++.h>
 #include "gtest/gtest.h"
 
 using namespace std;
+typedef unsigned int uint;
 
 namespace p1392 {
 

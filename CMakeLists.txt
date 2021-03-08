@@ -20,6 +20,7 @@ target_link_libraries(Tutorial PUBLIC gtest)
 target_include_directories(Tutorial PUBLIC
         "${PROJECT_BINARY_DIR}"
         "${PROJECT_SOURCE_DIR}/third-party/googletest-release-1.10.0/googletest/include"
+        "${PROJECT_SOURCE_DIR}"
         )
 
 add_compile_definitions(HuangWei_TEST)

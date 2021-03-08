@@ -3,7 +3,10 @@
 
 #include "gtest/gtest.h"
 
+#include "src/include/MyList.h"
+
 using namespace std;
+using namespace MyList;
 
 namespace p_ {
 

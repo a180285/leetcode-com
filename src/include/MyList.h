@@ -19,8 +19,40 @@ namespace MyList {
 
     using namespace std;
 
+
+
     ListNode* buildList(vector<int> arr);
     void printList(ListNode* head);
+
+    ListNode* reverseList(ListNode* head);
+    int listLength(ListNode* head);
+    ListNode* splitList(ListNode*& head, int n);
+    ListNode* concatLists(std::initializer_list<ListNode*> lists);
+    ListNode* insertNode(ListNode* it, ListNode* node);
+    ListNode* getTail(ListNode* head);
+
+    class HwList {
+    public:
+        ListNode* tail;
+        ListNode* root;
+        HwList() {
+            root = new ListNode;
+            tail = root;
+        }
+
+        void addToTail(ListNode* node) {
+            tail->next = node;
+            tail = tail->next;
+        }
+
+        void addToHead(ListNode* node) {
+            insertNode(root, node);
+        }
+
+        ListNode* head() {
+            return root->next;
+        }
+    };
 }
 
 #endif //TUTORIAL_MYLIST_H

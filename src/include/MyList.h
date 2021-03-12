@@ -32,6 +32,18 @@ namespace MyList {
     ListNode* getTail(ListNode* head);
 
     class HwList {
+
+        static ListNode* insertNode(ListNode* it, ListNode* node) {
+            if (it == nullptr) {
+                return node;
+            }
+            if (node != nullptr) {
+                node->next = it->next;
+                it->next = node;
+            }
+            return it;
+        }
+
     public:
         ListNode* tail;
         ListNode* root;
